@@ -1,0 +1,27 @@
+{
+  "name": "@b12k/otus-app",
+  "version": "0.0.0",
+  "description": "Otus Demo Application",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/b12k/otus-app.git"
+  },
+  "keywords": [
+    "OTUS Microservices Course"
+  ],
+  "author": "Bogdan Kolesnyk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/b12k/otus-app/issues"
+  },
+  "homepage": "https://github.com/b12k/otus-app#readme",
+  "dependencies": {
+    "express": "4.17.1",
+    "pino-http": "5.5.0",
+    "pino-pretty": "4.5.0"
+  }
+}
