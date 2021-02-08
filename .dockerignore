@@ -1,4 +1,6 @@
 .idea/
+
+k8s/
 node_modules/
 
 .npmrc
@@ -6,5 +8,7 @@ node_modules/
 .dockerignore
 .editorconfig
 
+README.md
 Dockerfile
+skaffold.yaml
 docker-compose.yml

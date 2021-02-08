@@ -7,7 +7,19 @@ Sample app.
 `Expose: 8000`
 
 Endpoints:
-- Welcome: `/`
-- Health: `/health`
+- Welcome: `/otus-app/bogdan`
+- Health: `/otus-app/health`
+
+### Run:
+
+`skaffold run`
+OR
+`cd k8s && kubectl apply -f .`
+
+### Test
+
+`curl -H "Host: arch.homework" http://localhost/otus-app/bogdan`
+
+
 
 

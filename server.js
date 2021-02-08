@@ -5,11 +5,17 @@ const pino = require('pino-http')({
   },
 })
 const server = require('express')();
+const version = require('./package.json').version;
 
 let serverStartedAt;
 server
   .use(pino)
-  .get('/', (_, res) => res.send(`[${os.hostname()}] Hello OTUS!`))
+  .get('/', (_, res) => res.json({
+    os: os.hostname(),
+    port: process.env.PORT || `default (8000)`,
+    message: 'HELLO OTUS!',
+    version,
+  }))
   .get('/health', (_, res) => res.json({
     upTime: Date.now() - serverStartedAt,
     server: os.hostname(),

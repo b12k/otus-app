@@ -1,0 +1,15 @@
+apiVersion: skaffold/v2beta11
+kind: Config
+metadata:
+  name: otus-app
+build:
+  artifacts:
+  - image: b12k/otus-app
+    docker:
+      dockerfile: Dockerfile
+deploy:
+  kubectl:
+    manifests:
+    - k8s/deployment.yaml
+    - k8s/service.yaml
+    - k8s/ingress.yaml
