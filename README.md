@@ -14,7 +14,7 @@ Endpoints:
 
 `skaffold run`
 OR
-`cd k8s && kubectl apply -f .`
+`kubectl apply -f ./k8s`
 
 ### Test
 
